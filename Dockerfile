@@ -11,10 +11,6 @@ RUN apt-get -y update && \
   && apt-get clean && \
   rm -rf /var/lib/apt/lists/*
 
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US:en
-ENV LC_ALL en_US.UTF-8
-
 RUN pip install --upgrade pip && \
       pip install --upgrade virtualenv && \
       pip install --upgrade awscli
